@@ -1,4 +1,4 @@
-const API = "/api/notes";
+const API = "simple-full-stack-note-production.up.railway.app";
 
 async function loadNotes() {
   const res = await fetch(API);
