@@ -22,6 +22,8 @@ async function loadNotes() {
 async function addNote() {
   const input = document.getElementById("noteInput");
 
+  if (!input.value.trim()) return;
+
   await fetch(API, {
     method: "POST",
     headers: {
